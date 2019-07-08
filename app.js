@@ -13,13 +13,22 @@
 // if( true ) {
 //   const OPCIONES = "ninguna";
 // }
-var nombre = "Peter";
-var numero = 124;
-var booleano = true;
-var hoy = new Date();
-hoy = new Date('2020-10-21');
-var cualquiera;
-var spiderman = {
-    nombre: "Mireia",
-    edad: 20
-};
+// let nombre:string = "Peter";
+// let numero:number = 124;
+// let booleano:boolean = true;
+//
+// let hoy = new Date();
+//
+// hoy = new Date('2020-10-21');
+//
+// let cualquiera:any;
+//
+// let spiderman = {
+//   nombre: "Mireia",
+//   edad: 20
+// }
+var nombre = "Mireia";
+var apellido = "Perez";
+var edad = 25;
+var texto = "Hola, " + nombre + " " + apellido + " (" + edad + ")";
+console.log(texto);

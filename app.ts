@@ -16,17 +16,26 @@
 //   const OPCIONES = "ninguna";
 // }
 
-let nombre:string = "Peter";
-let numero:number = 124;
-let booleano:boolean = true;
+// let nombre:string = "Peter";
+// let numero:number = 124;
+// let booleano:boolean = true;
+//
+// let hoy = new Date();
+//
+// hoy = new Date('2020-10-21');
+//
+// let cualquiera:any;
+//
+// let spiderman = {
+//   nombre: "Mireia",
+//   edad: 20
+// }
 
-let hoy = new Date();
 
-hoy = new Date('2020-10-21');
+let nombre:string = "Mireia"
+let apellido:string = "Perez"
+let edad:number = 25;
 
-let cualquiera:any;
+let texto = `Hola, ${nombre} ${apellido} (${edad})`
 
-let spiderman = {
-  nombre: "Mireia",
-  edad: 20
-}
+console.log(texto);
