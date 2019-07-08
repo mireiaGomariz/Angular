@@ -27,8 +27,24 @@
 //   nombre: "Mireia",
 //   edad: 20
 // }
-var nombre = "Mireia";
-var apellido = "Perez";
-var edad = 25;
-var texto = "Hola, " + nombre + " " + apellido + " (" + edad + ")";
-console.log(texto);
+// let nombre:string = "Mireia"
+// let apellido:string = "Perez"
+// let edad:number = 25;
+//
+// let texto = `Hola, ${nombre} ${apellido} (${edad})`;
+//
+// let texto2:string = ``
+//
+// console.log(texto);
+function activar(quien, objeto, momento) {
+    if (objeto === void 0) { objeto = "ventilador"; }
+    var mensaje;
+    if (momento) {
+        mensaje = quien + " activ\u00F3 el " + objeto + " en la " + momento;
+    }
+    else {
+        mensaje = quien + " activ\u00F3 el " + objeto;
+    }
+    console.log(mensaje);
+}
+activar("Mireia", "Ventilador", "tarde");

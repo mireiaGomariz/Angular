@@ -32,10 +32,32 @@
 // }
 
 
-let nombre:string = "Mireia"
-let apellido:string = "Perez"
-let edad:number = 25;
+// let nombre:string = "Mireia"
+// let apellido:string = "Perez"
+// let edad:number = 25;
+//
+// let texto = `Hola, ${nombre} ${apellido} (${edad})`;
+//
+// let texto2:string = ``
+//
+// console.log(texto);
 
-let texto = `Hola, ${nombre} ${apellido} (${edad})`
 
-console.log(texto);
+
+function activar( quien:string,
+                  objeto:string = "ventilador",
+                  momento?:string) {
+
+  let mensaje:string;
+
+  if (momento){
+
+    mensaje = `${ quien} activó el ${objeto} en la ${momento}`;
+  }else {
+      mensaje = `${ quien} activó el ${objeto}`;
+  }
+      console.log(mensaje)
+
+  }
+
+activar("Mireia", "Ventilador", "tarde");
