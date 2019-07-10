@@ -123,8 +123,30 @@
 
 //DESTRUCTURACION DE ARRAYS
 
-let avengers:string[] = ["Thor","Steve","Tony"]
+// let avengers:string[] = ["Thor","Steve","Tony"]
+//
+// let [ thor, capi, ironman ] = avengers;
+//
+// console.log(thor, capi, ironman);
 
-let [ thor, capi, ironman ] = avengers;
+//PROMESAS ES6
 
-console.log(thor, capi, ironman);
+let prom1 = new Promise( function( resolve, reject){
+
+  setTimeout( ()=>{
+    console.log("Promesa terminada");
+
+    reject();
+
+  }, 1500 )
+})
+
+prom1.then( function(){
+  console.log("Ejecutame cuando se termine bien!");
+
+},
+  function(){
+    console.error("Ejectuar si todo sale mal");
+  }
+
+)

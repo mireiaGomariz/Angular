@@ -107,6 +107,20 @@
 //
 // console.log(nombre, clave, poder);
 //DESTRUCTURACION DE ARRAYS
-var avengers = ["Thor", "Steve", "Tony"];
-var thor = avengers[0], capi = avengers[1], ironman = avengers[2];
-console.log(thor, capi, ironman);
+// let avengers:string[] = ["Thor","Steve","Tony"]
+//
+// let [ thor, capi, ironman ] = avengers;
+//
+// console.log(thor, capi, ironman);
+//PROMESAS ES6
+var prom1 = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        console.log("Promesa terminada");
+        reject();
+    }, 1500);
+});
+prom1.then(function () {
+    console.log("Ejecutame cuando se termine bien!");
+}, function () {
+    console.error("Ejectuar si todo sale mal");
+});
