@@ -53,6 +53,7 @@
 //   }
 //
 // activar("Mireia", "Ventilador", "tarde");
+//FUNCIONES DE FLECHA
 // let miFuncion = function( a ){
 //   return a;
 // }
@@ -80,11 +81,24 @@
 //
 // console.log( miFuncion ("Normal"));
 // console.log( miFuncionF ("Flecha"));
-var hulk = {
-    nombre: "Hulk",
-    smash: function () {
-        var _this = this;
-        setTimeout(function () { return console.log(_this.nombre + " smash!!"); }, 1500);
-    }
+//
+// let hulk = {
+//   nombre: "Hulk",
+//   smash(){
+//
+//     setTimeout( ()=> console.log(this.nombre + " smash!!"),  1500 );
+//
+//   }
+// }
+//
+// hulk.smash();
+var avenger = {
+    nombre: "Steve",
+    clave: "Capitan America",
+    poder: "Droga"
 };
-hulk.smash();
+var nombre = avenger.nombre, clave = avenger.clave, poder = avenger.poder;
+// let nombre = avenger.nombre;
+// let clave = avenger.clave;
+// let poder = avenger.poder;
+console.log(nombre, clave, poder);

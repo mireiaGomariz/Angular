@@ -62,7 +62,7 @@
 //
 // activar("Mireia", "Ventilador", "tarde");
 
-
+//FUNCIONES DE FLECHA
 
 // let miFuncion = function( a ){
 //   return a;
@@ -92,14 +92,30 @@
 // console.log( miFuncion ("Normal"));
 // console.log( miFuncionF ("Flecha"));
 
+//
+// let hulk = {
+//   nombre: "Hulk",
+//   smash(){
+//
+//     setTimeout( ()=> console.log(this.nombre + " smash!!"),  1500 );
+//
+//   }
+// }
+//
+// hulk.smash();
 
-let hulk = {
-  nombre: "Hulk",
-  smash(){
 
-    setTimeout( ()=> console.log(this.nombre + " smash!!"),  1500 );
 
-  }
+let avenger = {
+  nombre: "Steve",
+  clave: "Capitan America",
+  poder: "Droga"
 }
 
-hulk.smash();
+let { nombre, clave, poder } = avenger;
+
+// let nombre = avenger.nombre;
+// let clave = avenger.clave;
+// let poder = avenger.poder;
+
+console.log(nombre, clave, poder);
