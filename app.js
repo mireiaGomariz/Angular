@@ -92,13 +92,21 @@
 // }
 //
 // hulk.smash();
-var avenger = {
-    nombre: "Steve",
-    clave: "Capitan America",
-    poder: "Droga"
-};
-var nombre = avenger.nombre, clave = avenger.clave, poder = avenger.poder;
-// let nombre = avenger.nombre;
-// let clave = avenger.clave;
-// let poder = avenger.poder;
-console.log(nombre, clave, poder);
+//DESTRUCTURACION OBJETOS
+// let avenger = {
+//   nombre: "Steve",
+//   clave: "Capitan America",
+//   poder: "Droga"
+// }
+//
+// let { nombre, clave, poder } = avenger;
+//
+// // let nombre = avenger.nombre;
+// // let clave = avenger.clave;
+// // let poder = avenger.poder;
+//
+// console.log(nombre, clave, poder);
+//DESTRUCTURACION DE ARRAYS
+var avengers = ["Thor", "Steve", "Tony"];
+var thor = avengers[0], capi = avengers[1], ironman = avengers[2];
+console.log(thor, capi, ironman);
