@@ -154,29 +154,51 @@
 
 //INTERFACES TypeScript
 
-interface Xmen {
-  nombre:string,
-  poder:string,
+// interface Xmen {
+//   nombre:string,
+//   poder:string,
+//
+// }
+//
+// function enviarCuartel(xmen:Xmen){
+//
+//   console.log("Enviando al cuartel " + xmen.nombre);
+//
+// };
+//
+//
+// function enviarMision(xmen:Xmen){
+//
+//   console.log("Enviando a: " + xmen.nombre);
+//
+// };
+//
+// let wolverine:Xmen = {
+//   nombre: "Wolverine",
+//   poder: "Regeneración"
+// };
+//
+// enviarMision(wolverine);
+// enviarCuartel(wolverine);
 
+
+//CLASES BASICAS EN TypeScript
+
+
+class Avenger {
+
+  nombre:string;
+  equipo:string;
+  nombreReal:string;
+
+  puedePelear:boolean;
+  peleasGanadas:number;
+
+  constructor(){
+    console.log("Se ha ejecutado el constructor");
+  }
 }
 
-function enviarCuartel(xmen:Xmen){
+let antman:Avenger = new Avenger ();
 
-  console.log("Enviando al cuartel " + xmen.nombre);
-
-};
-
-
-function enviarMision(xmen:Xmen){
-
-  console.log("Enviando a: " + xmen.nombre);
-
-};
-
-let wolverine:Xmen = {
-  nombre: "Wolverine",
-  poder: "Regeneración"
-};
-
-enviarMision(wolverine);
-enviarCuartel(wolverine);
+console.log(antman);
