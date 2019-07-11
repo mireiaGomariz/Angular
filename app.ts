@@ -131,22 +131,52 @@
 
 //PROMESAS ES6
 
-let prom1 = new Promise( function( resolve, reject){
+// let prom1 = new Promise( function( resolve, reject){
+//
+//   setTimeout( ()=>{
+//     console.log("Promesa terminada");
+//
+//     reject();
+//
+//   }, 1500 )
+// })
+//
+// prom1.then( function(){
+//   console.log("Ejecutame cuando se termine bien!");
+//
+// },
+//   function(){
+//     console.error("Ejectuar si todo sale mal");
+//   }
+//
+// )
 
-  setTimeout( ()=>{
-    console.log("Promesa terminada");
 
-    reject();
+//INTERFACES TypeScript
 
-  }, 1500 )
-})
+interface Xmen {
+  nombre:string,
+  poder:string,
 
-prom1.then( function(){
-  console.log("Ejecutame cuando se termine bien!");
+}
 
-},
-  function(){
-    console.error("Ejectuar si todo sale mal");
-  }
+function enviarCuartel(xmen:Xmen){
 
-)
+  console.log("Enviando al cuartel " + xmen.nombre);
+
+};
+
+
+function enviarMision(xmen:Xmen){
+
+  console.log("Enviando a: " + xmen.nombre);
+
+};
+
+let wolverine:Xmen = {
+  nombre: "Wolverine",
+  poder: "Regeneración"
+};
+
+enviarMision(wolverine);
+enviarCuartel(wolverine);
